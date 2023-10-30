@@ -1,21 +1,21 @@
 # Juan Marquina - Data Analysis Portfolio 
 ---
 ## About me 
-¡Hola! Mi nombre es Juan y te doy la bienvenida a mi portafolio. Este espacio está dedicado a exhibir mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos más destacados en SQL, que incluyen visualizaciones de datos creadas con Power BI.
+¡Hola! Mi nombre es Juan y te doy la bienvenida a mi portafolio. Este espacio está dedicado a exhibir mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos en SQL, que incluyen visualizaciones de datos creadas con Power BI.
 
 ---
 
 ## Contenido
 - [About me](#About-me)
 - [Proyectos](#Proyectos)
-    + [Football Database](#Football-Database)
+    + [Football Dataset](#Football-Dataset)
     + [Northwind Database](#Northwind)
 - [Contacto](#Contacto)
 
 ## Proyectos
 Esta seccion contiene una lista de proyectos con breve descripcion
 
-### Football Database
+### Football Dataset
 
 **Descripcion:** en este proyecto, use un dataset encontrado en Kaggle para analizarr ....
 
