@@ -28,7 +28,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 ### Northwind 
 
-**Descripcion:** En este trabajo, se ha optado por utilizar la base de datos Northwind, que es un ejemplo desarrollado por Microsoft. Esta base de datos contiene información sobre las ventas de una empresa ficticia llamada "Northwind Traders", la cual se dedica a la importación y exportación de alimentos especiales de todo el mundo. El objetivo principal del análisis es comprender su estructura, relaciones y datos para mejorar la gestión y toma de decisiones relacionadas 
+**Descripcion:** En este trabajo, se ha optado por utilizar la base de datos Northwind, que es un ejemplo desarrollado por Microsoft. Esta base de datos contiene información sobre las ventas de una empresa ficticia llamada "Northwind Traders", la cual se dedica a la importación y exportación de alimentos especiales de todo el mundo. La ejecución del proyecto se llevó a cabo en Power BI, incluyendo la limpieza y transformación de datos, así como la implementación de medidas para la posterior creación del panel de control (dashboard).
 
 **Code:** dsa
 
