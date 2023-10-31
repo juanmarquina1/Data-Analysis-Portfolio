@@ -1,5 +1,5 @@
 ## Tabla de contenido
-- asd
+- [games](#Tabla-games)
 - asd
 
 --TABLA APPEARANCES
@@ -104,6 +104,8 @@ ALTER COLUMN
 
 
 --*********************************************************************************
+## Tabla games
+	
 --TABLA GAMES
 
 -- Elimino las comillas de las siguientes columnas: ["gameID"], ["leagueID"], ["season"], ["homeTeamID"], ["awayTeamID"] . 
