@@ -21,7 +21,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Code:** [Football Analysis](https://github.com/juanmarquina1/Football-Database/blob/main/Football%20Analysis.sql)
 
-**Presentacion:** pdf version estatica
+**Presentacion:** [Football Dashboard Estático](https://github.com/juanmarquina1/Football-Database/blob/main/Football%20Dashboard%20Estatico.pdf)
 
 **Resultado:** asd
 
