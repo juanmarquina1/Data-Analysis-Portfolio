@@ -1,6 +1,5 @@
-## Tabla de contenido
-- [games](#Tabla-games)
-- asd
+La sección inicial de este archivo se dedica a detallar el proceso de limpieza y transformación de datos.
+Una vez que hemos completado la preparación de los datos, avanzamos hacia el análisis de las tablas.
 
 --TABLA APPEARANCES
 
@@ -104,8 +103,6 @@ ALTER COLUMN
 
 
 --*********************************************************************************
-## Tabla games
-	
 --TABLA GAMES
 
 -- Elimino las comillas de las siguientes columnas: ["gameID"], ["leagueID"], ["season"], ["homeTeamID"], ["awayTeamID"] . 
@@ -430,7 +427,7 @@ SELECT
 	l.["name"] AS League,
 	P.["name"] AS Player,
 	COUNT(A.["gameID"]) AS Total_games,	-- Cantidad de partidos jugados.
-    SUM(A.["goals"]) AS Total_goals,	-- Cantidad total de goles anotados.
+        SUM(A.["goals"]) AS Total_goals,	-- Cantidad total de goles anotados.
 	SUM(["assists"]) AS Total_assists,	-- Cantidad total de asistencias.
 	(SUM(A.["goals"]) + SUM(["assists"])) AS Total_Goals_and_Assists,	-- Suma total de goles y asistencias.
 	SUM(["time"]) AS Total_time,	-- Tiempo total jugado.
@@ -512,9 +509,9 @@ ORDER BY
 SELECT
     ["homeGoals"],
     ["awayGoals"],
-	["homeProbability"],
-	["awayProbability"],
-	["drawProbability"],
+    ["homeProbability"],
+    ["awayProbability"],
+    ["drawProbability"],
     CASE
         WHEN ["homeGoals"] > ["awayGoals"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 'Correct'
         WHEN ["homeGoals"] < ["awayGoals"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 'Correct'
@@ -560,14 +557,14 @@ SELECT
 	l.["name"] AS League,	-- Nombre de la liga (proveniente de la tabla LEAGUES).
 	tm.["name"] AS Team,	-- Nombre de los equipos (proveniente de la tabla TEAMS).
 	SUM(CASE WHEN t.["result"] = 'W' THEN 3
-			 WHEN t.["result"] = 'L' THEN 0
-			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creación de la columna de puntos.
+		 WHEN t.["result"] = 'L' THEN 0
+		 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creación de la columna de puntos.
 	COUNT(t.["gameID"]) AS P,	-- Cantidad de partidos jugados.
 	SUM(CASE WHEN t.["result"] = 'W' THEN 1 ELSE 0 END) AS W,
 	SUM(CASE WHEN t.["result"] = 'D' THEN 1 ELSE 0 END) AS D,
 	SUM(CASE WHEN t.["result"] = 'L' THEN 1 ELSE 0 END) AS L,	-- Creación de las columnas que cuentan la cantidad de partidos ganados, empatados o perdidos.
-    SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
-    SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
+        SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
+        SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
 			 ELSE g.["homegoals"] END) AS GA	-- Cálculo de los goles en contra (esta función siempre suma los goles del equipo contrario al TEAMID).
 FROM
 	teamstats AS t
@@ -590,21 +587,21 @@ SELECT
 	tm.["name"] AS Team,	-- Nombre de los equipos (proveniente de la tabla TEAMS).
 -- Puntos esperados: Si TEAMID es el equipo local y las probabilidades de que el local gane son mayores a que gane el visitante o empate, suma 3 puntos.
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 3
-			 WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 3
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
-			 ELSE 0 END) as xPts,
+		 WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 3
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
+		 ELSE 0 END) as xPts,
 	COUNT(t.["gameID"]) AS P,	-- Cantidad de partidos jugados.
 -- Cantidad de partidos ganados: Si TEAMID es el local y este gana, suma 1 partido ganado; si TEAMID es visitante y este gana, también suma 1 partido ganado.
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 1 
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 1			
-			ELSE 0 END) AS W,
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 1			
+		ELSE 0 END) AS W,
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1 
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1 
-			 ELSE 0 END) AS D,
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1 
+		 ELSE 0 END) AS D,
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 1 
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 1			
-			ELSE 0 END) AS L
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 1			
+		 ELSE 0 END) AS L
 FROM
 	teamstats AS t
 JOIN 
@@ -625,17 +622,17 @@ SELECT
 	l.["name"] AS League,	-- Nombre de la liga (proveniente de la tabla LEAGUES).
 	tm.["name"] AS Team,	-- Nombre de los equipos (proveniente de la tabla TEAMS).
 	SUM(CASE WHEN t.["result"] = 'W' THEN 3
-			 WHEN t.["result"] = 'L' THEN 0
-			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creación de la columna de puntos.
+		 WHEN t.["result"] = 'L' THEN 0
+		 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creación de la columna de puntos.
 -- Puntos esperados: Si TEAMID es el equipo local y las probabilidades de que el local gane son mayores a que gane el visitante o empate, suma 3 puntos.
-	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 3
-			 WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 3
-			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
-			 ELSE 0 END) as xPts,
-    SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
-    SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
-			 ELSE g.["homegoals"] END) AS GA,	-- Cálculo de los goles en contra (esta función siempre suma los goles del equipo contrario al TEAMID).
+        SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 3
+		 WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 3
+		 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
+		 ELSE 0 END) as xPts,
+        SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
+        SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
+	          ELSE g.["homegoals"] END) AS GA,	-- Cálculo de los goles en contra (esta función siempre suma los goles del equipo contrario al TEAMID).
 	SUM(["xGoals"]) AS xGF,	-- Suma de los goles a favor esperados.
 	(SELECT SUM(["xGoals"]) FROM teamstats AS t2 WHERE t.["gameID"] = t2.["gameID"] AND t.["teamID"] != t2.["teamID"]) AS xGA, -- Suma de los goles en contra esperados.
 	t.["shots"],
