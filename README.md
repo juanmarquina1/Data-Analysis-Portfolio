@@ -17,7 +17,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 ### Football Dataset
 
-**Descripcion:** En este proyecto, se empleó un conjunto de datos encontrado en [Kaggle](https://www.kaggle.com/datasets/technika148/football-database/data), el cual contiene información en 6 tablas y 356.500 filas sobre fútbol en las cinco principales ligas de Europa entre 2014 y 2020. La fase inicial del trabajo se llevó a cabo en SQL Server Management Studio, donde se realizó la limpieza y transformación de los datos. Una vez que se concluyó la preparación de los datos, se procedió al análisis detallado de las tablas. Finalmente, se creó un panel de control (dashboard) utilizando Power BI.
+**Descripcion:** En este proyecto, se empleó un conjunto de datos encontrado en [Kaggle](https://www.kaggle.com/datasets/technika148/football-database/data), el cual contiene información en 6 tablas y 356.500 filas sobre fútbol de las cinco principales ligas de Europa entre 2014 y 2020. La fase inicial del trabajo se llevó a cabo en SQL Server Management Studio, donde se realizó la limpieza y transformación de los datos. Una vez que se concluyó la preparación de los datos, se procedió al análisis detallado de las tablas. Finalmente, se creó un panel de control (dashboard) utilizando Power BI.
 
 **Code:** [Football Analysis](https://github.com/juanmarquina1/Football-Database/blob/main/Football%20Analysis.sql)
 
