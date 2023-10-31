@@ -1,5 +1,5 @@
 La sección inicial de este archivo se dedica a detallar el proceso de limpieza y transformación de datos.
-Una vez que hemos completado la preparación de los datos, avanzamos hacia el análisis de las tablas.
+Una vez que se concluyó con la preparación de los datos, se procedió al análisis de las tablas.
 
 --TABLA APPEARANCES
 
