@@ -15,7 +15,7 @@
 ## Proyectos
 Esta seccion contiene una lista de proyectos con breve descripcion
 
-### Football Dataset
+### Football Database
 
 **Descripcion:** En este proyecto, se empleó un conjunto de datos encontrado en [Kaggle](https://www.kaggle.com/datasets/technika148/football-database/data), el cual contiene información en 6 tablas y 356.500 filas sobre fútbol de las cinco principales ligas de Europa entre 2014 y 2020. La fase inicial del trabajo se llevó a cabo en SQL Server Management Studio, donde se realizó la limpieza y transformación de los datos. Una vez que se concluyó la preparación de los datos, se procedió al análisis detallado de las tablas. Finalmente, se creó un panel de control (dashboard) utilizando Power BI.
 
@@ -23,7 +23,8 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Presentacion:** [Football Dashboard Estático](https://github.com/juanmarquina1/Football-Database/blob/main/Football%20Dashboard%20Estatico.pdf)
 
-**Resultado:** asd
+**Resultado:** Se crearon tablas detalladas de posiciones por liga y temporada, junto con el cálculo de promedios de goles y asistencias por partido para cada jugador, proporcionando valiosos insights sobre el rendimiento individual y grupal. Además, se contrastaron los datos reales con las proyecciones, visualizando la precisión de las predicciones por equipo.
+
 
 ### Northwind 
 
