@@ -1,3 +1,7 @@
+## Tabla de contenido
+- asd
+- asd
+
 --TABLA APPEARANCES
 
 -- Elimino las comillas de las siguientes columnas: ["gameID"], ["playerID"], ["leagueID"] y ["position"]. 
@@ -286,8 +290,8 @@ ALTER COLUMN
 
 
 --**********************************************************************************
--- Validaci髇 de valores NULL en la tabla APPEARANCES
--- Verifico si hay valores nulos en columnas clave y de inter閟 en la tabla de Apariciones.
+-- Validaci贸n de valores NULL en la tabla APPEARANCES
+-- Verifico si hay valores nulos en columnas clave y de inter茅s en la tabla de Apariciones.
 SELECT *
 FROM 
 	appearances
@@ -309,7 +313,7 @@ WHERE
 	["leagueID"] IS NULL 
 -- No se encontraron valores nulos en las columnas especificadas.
 
--- Validaci髇 de valores NULL en la tabla GAMES
+-- Validaci贸n de valores NULL en la tabla GAMES
 -- Busco valores nulos en columnas clave y relevantes en la tabla de Juegos.
 SELECT *
 FROM 
@@ -328,8 +332,8 @@ WHERE
     ["awayProbability"] IS NULL
 -- No se encontraron valores nulos en las columnas especificadas.
 
--- Validaci髇 de valores NULL en la tabla PLAYERS
--- Busco valores nulos en columnas clave y de inter閟 en la tabla de Jugadores.
+-- Validaci贸n de valores NULL en la tabla PLAYERS
+-- Busco valores nulos en columnas clave y de inter茅s en la tabla de Jugadores.
 SELECT *
 FROM 
 	players
@@ -338,7 +342,7 @@ WHERE
 	["name"] IS NULL
 -- No se encontraron valores nulos en las columnas especificadas.
 
--- Validaci髇 de valores NULL en la tabla SHOTS
+-- Validaci贸n de valores NULL en la tabla SHOTS
 -- Verifico si hay valores nulos en columnas clave y relevantes en la tabla de Tiros.
 SELECT *
 FROM 
@@ -355,8 +359,8 @@ WHERE
     ["xGoal"] IS NULL 
 -- No se encontraron valores nulos en las columnas especificadas.
 
--- Validaci髇 de valores NULL en la tabla TEAMS
--- Busco valores nulos en columnas clave y de inter閟 en la tabla de Equipos.
+-- Validaci贸n de valores NULL en la tabla TEAMS
+-- Busco valores nulos en columnas clave y de inter茅s en la tabla de Equipos.
 SELECT *
 FROM 
 	teams
@@ -365,8 +369,8 @@ WHERE
 	["name"] IS NULL
 -- No se encontraron valores nulos en las columnas especificadas.
 
--- Validaci髇 de valores NULL en la tabla TEAMSTATS
--- Busco valores nulos en columnas clave y de inter閟 en la tabla de Estad韘ticas de Equipos.
+-- Validaci贸n de valores NULL en la tabla TEAMSTATS
+-- Busco valores nulos en columnas clave y de inter茅s en la tabla de Estad铆sticas de Equipos.
 SELECT *
 FROM 
 	teamstats
@@ -392,9 +396,9 @@ WHERE
 
 --**************************************************************************************************************************************************
 
--- An醠isis de la tabla APPEARANCES 
+-- An谩lisis de la tabla APPEARANCES 
 
--- Hay 6455 jugadores que tienen al menos una aparici髇 en estos datos.
+-- Hay 6455 jugadores que tienen al menos una aparici贸n en estos datos.
 SELECT DISTINCT
 	["playerID"]
 FROM
@@ -407,7 +411,7 @@ SELECT
 FROM
 	players
 
--- Busco si hay jugadores registrados m醩 de una vez en la tabla PLAYERS.
+-- Busco si hay jugadores registrados m谩s de una vez en la tabla PLAYERS.
 SELECT
 	["playerID"], 
 	COUNT(*)
@@ -448,7 +452,7 @@ ORDER BY
 
 --**************************************************************************************************************************************************
 
--- An醠isis de la tabla GAMES 
+-- An谩lisis de la tabla GAMES 
 
 -- Temporadas disponibles (2014 a 2020).
 SELECT DISTINCT 
@@ -456,7 +460,7 @@ SELECT DISTINCT
 FROM 
 	games
 
--- Busco partidos registrados m醩 de una vez en la tabla GAMES.
+-- Busco partidos registrados m谩s de una vez en la tabla GAMES.
 SELECT
 	["gameID"], 
 	COUNT(*)
@@ -467,8 +471,8 @@ GROUP BY
 HAVING
 	COUNT(*) > 1
 
--- Identificaci髇 de valores at韕icos. Se verifican si hay registros negativos o excesivamente grandes en las columnas de goles, 
--- y se asegura que las probabilidades sean positivas y est閚 en el rango [0, 1].
+-- Identificaci贸n de valores at铆picos. Se verifican si hay registros negativos o excesivamente grandes en las columnas de goles, 
+-- y se asegura que las probabilidades sean positivas y est茅n en el rango [0, 1].
 SELECT  
 	["gameID"]
 FROM 
@@ -502,7 +506,7 @@ ORDER BY
 	["season"]
 -- Se observa una discrepancia en la Liga 1 en 2016, con 379 partidos en lugar de 380.
 
--- Evaluaci髇 de la precisi髇 de las predicciones.
+-- Evaluaci贸n de la precisi贸n de las predicciones.
 SELECT
     ["homeGoals"],
     ["awayGoals"],
@@ -546,7 +550,7 @@ GROUP BY
 --**************************************************************************************************************************************************
 --**************************************************************************************************************************************************
 
--- An醠isis de la tabla TEAMSTATS
+-- An谩lisis de la tabla TEAMSTATS
 
 -- TABLA DE POSICIONES 
 SELECT 
@@ -555,22 +559,22 @@ SELECT
 	tm.["name"] AS Team,	-- Nombre de los equipos (proveniente de la tabla TEAMS).
 	SUM(CASE WHEN t.["result"] = 'W' THEN 3
 			 WHEN t.["result"] = 'L' THEN 0
-			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creaci髇 de la columna de puntos.
+			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creaci贸n de la columna de puntos.
 	COUNT(t.["gameID"]) AS P,	-- Cantidad de partidos jugados.
 	SUM(CASE WHEN t.["result"] = 'W' THEN 1 ELSE 0 END) AS W,
 	SUM(CASE WHEN t.["result"] = 'D' THEN 1 ELSE 0 END) AS D,
-	SUM(CASE WHEN t.["result"] = 'L' THEN 1 ELSE 0 END) AS L,	-- Creaci髇 de las columnas que cuentan la cantidad de partidos ganados, empatados o perdidos.
+	SUM(CASE WHEN t.["result"] = 'L' THEN 1 ELSE 0 END) AS L,	-- Creaci贸n de las columnas que cuentan la cantidad de partidos ganados, empatados o perdidos.
     SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
     SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
-			 ELSE g.["homegoals"] END) AS GA	-- C醠culo de los goles en contra (esta funci髇 siempre suma los goles del equipo contrario al TEAMID).
+			 ELSE g.["homegoals"] END) AS GA	-- C谩lculo de los goles en contra (esta funci贸n siempre suma los goles del equipo contrario al TEAMID).
 FROM
 	teamstats AS t
 JOIN 
-	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni髇 de la tabla TEAMSTATS con la tabla TEAMS.
+	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni贸n de la tabla TEAMSTATS con la tabla TEAMS.
 JOIN 
-	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni髇 de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
+	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni贸n de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
 JOIN
-	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni髇 de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
+	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni贸n de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
 GROUP BY
 	tm.["name"],
 	t.["season"],
@@ -589,7 +593,7 @@ SELECT
 			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
 			 ELSE 0 END) as xPts,
 	COUNT(t.["gameID"]) AS P,	-- Cantidad de partidos jugados.
--- Cantidad de partidos ganados: Si TEAMID es el local y este gana, suma 1 partido ganado; si TEAMID es visitante y este gana, tambi閚 suma 1 partido ganado.
+-- Cantidad de partidos ganados: Si TEAMID es el local y este gana, suma 1 partido ganado; si TEAMID es visitante y este gana, tambi茅n suma 1 partido ganado.
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 1 
 			 WHEN t.["teamID"] = g.["awayTeamID"] AND ["awayProbability"] > ["homeProbability"] AND ["awayProbability"] > ["drawProbability"] THEN 1			
 			ELSE 0 END) AS W,
@@ -602,11 +606,11 @@ SELECT
 FROM
 	teamstats AS t
 JOIN 
-	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni髇 de la tabla TEAMSTATS con la tabla TEAMS.
+	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni贸n de la tabla TEAMSTATS con la tabla TEAMS.
 JOIN 
-	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni髇 de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
+	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni贸n de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
 JOIN
-	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni髇 de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
+	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni贸n de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
 GROUP BY
 	tm.["name"],
 	t.["season"],
@@ -620,7 +624,7 @@ SELECT
 	tm.["name"] AS Team,	-- Nombre de los equipos (proveniente de la tabla TEAMS).
 	SUM(CASE WHEN t.["result"] = 'W' THEN 3
 			 WHEN t.["result"] = 'L' THEN 0
-			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creaci髇 de la columna de puntos.
+			 WHEN t.["result"] = 'D' THEN 1 END) AS Pts,	-- Creaci贸n de la columna de puntos.
 -- Puntos esperados: Si TEAMID es el equipo local y las probabilidades de que el local gane son mayores a que gane el visitante o empate, suma 3 puntos.
 	SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] AND ["homeProbability"] > ["awayProbability"] AND ["homeProbability"] > ["drawProbability"] THEN 3
 			 WHEN t.["teamID"] = g.["hometeamID"] AND ["drawProbability"] > ["homeProbability"] AND ["drawProbability"] > ["awayProbability"] THEN 1
@@ -629,7 +633,7 @@ SELECT
 			 ELSE 0 END) as xPts,
     SUM(t.["goals"]) AS GF,		-- Suma de los goles a favor de cada equipo desde la tabla TEAMSTATS.
     SUM(CASE WHEN t.["teamID"] = g.["hometeamID"] THEN g.["awaygoals"]	
-			 ELSE g.["homegoals"] END) AS GA,	-- C醠culo de los goles en contra (esta funci髇 siempre suma los goles del equipo contrario al TEAMID).
+			 ELSE g.["homegoals"] END) AS GA,	-- C谩lculo de los goles en contra (esta funci贸n siempre suma los goles del equipo contrario al TEAMID).
 	SUM(["xGoals"]) AS xGF,	-- Suma de los goles a favor esperados.
 	(SELECT SUM(["xGoals"]) FROM teamstats AS t2 WHERE t.["gameID"] = t2.["gameID"] AND t.["teamID"] != t2.["teamID"]) AS xGA, -- Suma de los goles en contra esperados.
 	t.["shots"],
@@ -640,11 +644,11 @@ SELECT
 FROM
 	teamstats AS t
 JOIN 
-	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni髇 de la tabla TEAMSTATS con la tabla TEAMS.
+	teams AS tm ON tm.["teamID"] = t.["teamID"]		-- Uni贸n de la tabla TEAMSTATS con la tabla TEAMS.
 JOIN 
-	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni髇 de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
+	games AS g ON g.["gameID"] = t.["gameID"]	-- Uni贸n de la tabla TEAMSTATS con la tabla GAMES para luego unirla con LEAGUES.
 JOIN
-	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni髇 de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
+	leagues AS l ON l.["leagueID"] = g.["leagueID"]		-- Uni贸n de la tabla GAMES con la tabla LEAGUES para traer los nombres de las ligas.
 GROUP BY
 	tm.["name"],
 	t.["season"],
