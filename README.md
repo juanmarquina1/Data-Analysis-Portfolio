@@ -1,6 +1,6 @@
 # Juan Marquina - Data Analysis Portfolio 
 ---
-## Sobre mi 
+## Sobre mí 
 ¡Hola! Mi nombre es Juan y te doy la bienvenida a mi portfolio. Este espacio está dedicado a exhibir mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos en SQL, que incluyen visualizaciones de datos creadas con Power BI.
 
 ---
