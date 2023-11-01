@@ -6,7 +6,6 @@
 ---
 
 ## Contenido
-- [Sobre mi](#Sobre-mi)
 - [Proyectos](#Proyectos)
     + [Football Database](#Football-Database)
     + [Northwind](#Northwind)
