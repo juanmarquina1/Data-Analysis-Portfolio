@@ -21,7 +21,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Código:** [Football Analysis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Analysis.sql)
 
-**Presentación:** [Football Dashboard Estático](https://github.com/juanmarquina1/Football-Database/blob/main/Football%20Dashboard%20Estatico.pdf)
+**Presentación:** [Football Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Dashboard%20Estatico.pdf)
 
 **Resultado:** Se crearon tablas detalladas de posiciones por liga y temporada, junto con el cálculo de promedios de goles y asistencias por partido para cada jugador, proporcionando valiosos insights sobre el rendimiento individual y grupal. Además, se contrastaron los datos reales con las proyecciones, visualizando la precisión de las predicciones por equipo.
 
@@ -32,7 +32,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Análisis:** dsa
 
-**Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Football-Database/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf)
+**Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf)
 
 **Resultado:** Se ha alcanzado una comprensión exhaustiva de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
 
