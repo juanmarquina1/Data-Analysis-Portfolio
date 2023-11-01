@@ -8,7 +8,7 @@
 ## Contenido
 - [Proyectos](#Proyectos)
     + [Football Database](#Football-Database)
-    + [Northwind](#Northwind)
+    + [Northwind Database](#Northwind-Database)
 - [Contacto](#Contacto)
 
 ## Proyectos
@@ -25,11 +25,11 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 **Resultado:** Se crearon tablas detalladas de posiciones por liga y temporada, junto con el cálculo de promedios de goles y asistencias por partido para cada jugador, proporcionando valiosos insights sobre el rendimiento individual y grupal. Además, se contrastaron los datos reales con las proyecciones, visualizando la precisión de las predicciones por equipo.
 
 
-### Northwind 
+### Northwind Database
 
 **Descripcion:** En este trabajo, se ha optado por utilizar la base de datos Northwind, que es un ejemplo desarrollado por Microsoft. Esta base de datos contiene información sobre las ventas de una empresa ficticia llamada "Northwind Traders", la cual se dedica a la importación y exportación de alimentos especiales de todo el mundo. La ejecución del proyecto se llevó a cabo en Power BI, incluyendo la limpieza y transformación de datos, así como la implementación de medidas para la posterior creación del panel de control (dashboard).
 
-**Análisis:** dsa
+**Análisis:** [Northwind Análisis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20-%20Analysis.pdf)
 
 **Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf)
 
