@@ -30,7 +30,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Descripcion:** En este trabajo, se ha optado por utilizar la base de datos Northwind, que es un ejemplo desarrollado por Microsoft. Esta base de datos contiene información sobre las ventas de una empresa ficticia llamada "Northwind Traders", la cual se dedica a la importación y exportación de alimentos especiales de todo el mundo. La ejecución del proyecto se llevó a cabo en Power BI, incluyendo la limpieza y transformación de datos, así como la implementación de medidas para la posterior creación del panel de control (dashboard).
 
-**Codigo:** dsa
+**Análisis:** dsa
 
 **Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Football-Database/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf)
 
@@ -38,4 +38,4 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 ## Contacto
 
-Puedes echar un vistazo a mi currículum en formato PDF y también visitar mi perfil en LinkedIn para obtener más información sobre mi.
+Puedes echar un vistazo a mi currículum en formato PDF y también visitar mi perfil en [LinkedIn](https://www.linkedin.com/in/juan-marquina1) para obtener más información sobre mi.
