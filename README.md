@@ -37,4 +37,4 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 ## Contacto
 
-Puedes echar un vistazo a mi currículum en formato PDF y también visitar mi perfil en [LinkedIn](https://www.linkedin.com/in/juan-marquina1) para obtener más información sobre mi.
+Podes mirar mi currículum y también visitar mi perfil en [LinkedIn](https://www.linkedin.com/in/juan-marquina1) para obtener más información sobre mi.
