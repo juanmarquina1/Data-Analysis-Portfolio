@@ -34,7 +34,7 @@ Esta seccion contiene una lista de proyectos con breve descripcion
 
 **Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf)
 
-**Resultado:** Se ha alcanzado una comprensión exhaustiva de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
+**Resultado:** Se ha alcanzado una comprensión de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
 
 ## Contacto
 
