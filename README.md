@@ -1,7 +1,7 @@
 # Juan Marquina - Data Analysis Portfolio 
 ---
 ## Sobre mí 
-¡Hola! Mi nombre es Juan y te doy la bienvenida a mi portfolio. Este espacio está dedicado a exhibir mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos en SQL, que incluyen visualizaciones de datos creadas con Power BI.
+Soy Juan y este espacio está dedicado a exponer mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos en SQL, que incluyen visualizaciones de datos creadas con Power BI.
 
 ---
 
@@ -12,7 +12,6 @@
 - [Contacto](#Contacto)
 
 ## Proyectos
-Esta sección contiene una lista de proyectos con breve descripción.
 
 ### Football Database
 
@@ -37,7 +36,7 @@ Esta sección contiene una lista de proyectos con breve descripción.
 
 ## Contacto
 
-- CV
+- [CV]
 
 - [LinkedIn](https://www.linkedin.com/in/juan-marquina1)
 
