@@ -36,8 +36,8 @@ Soy Juan y este espacio está dedicado a exponer mis habilidades, compartir proy
 
 ## Contacto
 
-- [CV]
+- [CV](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/CV%20Juan%20Marquina.pdf)
 
 - [LinkedIn](https://www.linkedin.com/in/juan-marquina1)
 
-- Mail: juanmarquina1@gmail.com
+- juanmarquina1@gmail.com
