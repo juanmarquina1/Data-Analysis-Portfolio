@@ -6,10 +6,10 @@ Soy Juan y este espacio está dedicado a exponer mis habilidades, compartir proy
 ---
 
 ## Contenido
-- [Proyectos](#Proyectos)
-    + [Football Database](#Football-Database)
-    + [Northwind Database](#Northwind-Database)
-- [Contacto](#Contacto)
+- Proyectos
+    + Football Database
+    + Northwind Database
+- Contacto
 
 ## Proyectos
 
