@@ -1,40 +1,40 @@
 # Juan Marquina - Data Analysis Portfolio 
 ---
-## Sobre mí 
-Soy Juan y este espacio está dedicado a exponer mis habilidades, compartir proyectos y hacer un seguimiento de mi evolución en el ámbito del Análisis de Datos. A continuación, destaco algunos de mis proyectos en SQL, que incluyen visualizaciones de datos creadas con Power BI.
+## About  
+I'm Juan, and this space is dedicated to showcasing my skills, sharing projects, and tracking my progress in the field of Data Analytics. Below, I highlight some of my projects in SQL, which include data visualizations created with Power BI.
 
 ---
 
-## Contenido
-- Proyectos
+## Table of Contents
+- Projects
     + Football Database
     + Northwind Database
-- Contacto
+- Contact
 
-## Proyectos
+## Projects
 
 ### Football Database
 
-**Descripción:** En este proyecto, se empleó un conjunto de datos encontrado en [Kaggle](https://www.kaggle.com/datasets/technika148/football-database/data), el cual contiene información en 6 tablas y 356.500 filas sobre fútbol de las cinco principales ligas de Europa entre 2014 y 2020. La fase inicial del trabajo se llevó a cabo en SQL Server Management Studio, donde se realizó la limpieza y transformación de los datos. Una vez que se concluyó la preparación de los datos, se procedió al análisis detallado de las tablas. Finalmente, se creó un panel de control (dashboard) utilizando Power BI.
+**Description:** In this project, a dataset from [Kaggle](https://www.kaggle.com/datasets/technika148/football-database/data) was utilized, containing information across 6 tables and 356,500 rows related to football in the top five European leagues between 2014 and 2020. The initial phase of the work took place in SQL Server Management Studio, where data cleaning and transformation were carried out. After the data preparation was completed, a detailed analysis of the tables was conducted. Finally, a dashboard was created using Power BI.
 
-**Código:** [Football Analysis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Analysis.sql)
+**Code:** [Football Analysis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Analysis.sql)
 
-**Presentación:** [Football Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Dashboard%20Estatico.pdf) / [Football Dashboard.pbix](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Dashboard.pbix)
+**Presentation:** [Football Dashboard.pdf](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Dashboard%20Estatico.pdf) / [Football Dashboard.pbix](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Football%20Dashboard.pbix)
 
-**Resultado:** Se crearon tablas detalladas de posiciones por liga y temporada, junto con el cálculo de promedios de goles y asistencias por partido para cada jugador, proporcionando valiosos insights sobre el rendimiento individual y grupal. Además, se contrastaron los datos reales con las proyecciones, visualizando la precisión de las predicciones por equipo.
+**Results:** Detailed tables of league and season standings were created, accompanied by the calculation of averages for goals and assists per match for each player. This process provided valuable insights into individual and team performance. Additionally, a comparison was made between actual data and projections, visually showing the accuracy of predictions on a team-by-team basis.
 
 
 ### Northwind Database
 
-**Descripción:** En este trabajo, se ha optado por utilizar la base de datos Northwind, que es un ejemplo desarrollado por Microsoft. Esta base de datos contiene información sobre las ventas de una empresa ficticia llamada "Northwind Traders", la cual se dedica a la importación y exportación de alimentos especiales de todo el mundo. La ejecución del proyecto se llevó a cabo en Power BI, incluyendo la limpieza y transformación de datos, así como la implementación de medidas para la posterior creación del panel de control (dashboard).
+**Description:** In this project, the decision was made to utilize the Northwind database, an example developed by Microsoft. This database contains information on the sales of a fictional company called "Northwind Traders," engaged in the import and export of specialty foods worldwide. The project was executed in Power BI, involving data cleaning and transformation, along with the implementation of measures for the subsequent creation of the dashboard.
 
-**Análisis:** [Northwind Análisis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20-%20Analysis.pdf)
+**Analysis:** [Northwind Análisis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20-%20Analysis.pdf)
 
-**Presentación:** [Northwind Dashboard Estático](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf) / [Northwind Dashboard.pbix](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard.pbix)
+**Presentation:** [Northwind Dashboard.pdf](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf) / [Northwind Dashboard.pbix](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard.pbix)
 
-**Resultado:** Se ha alcanzado una comprensión de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
+**Results:** Se ha alcanzado una comprensión de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
 
-## Contacto
+## Contact
 
 - [CV](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/CV%20Juan%20Marquina.pdf)
 
