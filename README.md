@@ -36,7 +36,7 @@ I'm Juan, and this space is dedicated to showcasing my skills, sharing projects,
 
 ## Contact
 
-- [CV](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/CV%20Juan%20Marquina.pdf)
+- [CV](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/CV%20-%20Juan%20Marquina.pdf)
 
 - [LinkedIn](https://www.linkedin.com/in/juan-marquina1)
 
