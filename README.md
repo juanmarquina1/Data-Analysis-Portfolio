@@ -28,11 +28,11 @@ I'm Juan, and this space is dedicated to showcasing my skills, sharing projects,
 
 **Description:** In this project, the decision was made to utilize the Northwind database, an example developed by Microsoft. This database contains information on the sales of a fictional company called "Northwind Traders," engaged in the import and export of specialty foods worldwide. The project was executed in Power BI, involving data cleaning and transformation, along with the implementation of measures for the subsequent creation of the dashboard.
 
-**Analysis:** [Northwind Análisis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20-%20Analysis.pdf)
+**Analysis:** [Northwind Analysis](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20-%20Analysis.pdf)
 
 **Presentation:** [Northwind Dashboard.pdf](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard%20Est%C3%A1tico.pdf) / [Northwind Dashboard.pbix](https://github.com/juanmarquina1/Data-Analysis-Portfolio/blob/main/Northwind%20Dashboard.pbix)
 
-**Results:** Se ha alcanzado una comprensión de múltiples aspectos fundamentales de la base de datos, abarcando desde una perspectiva global de ingresos y tiempos de transporte hasta un análisis detallado de productos, categorías, empleados, clientes y envíos.
+**Results:** A comprehensive understanding of multiple fundamental aspects of the database has been achieved, ranging from a global perspective on revenues and transportation times to a detailed analysis of products, categories, employees, customers, and shipments.
 
 ## Contact
 
