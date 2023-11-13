@@ -1,3 +1,6 @@
+--The first stage is dedicated to cleaning and transforming the data. 
+--Subsequently, a thorough analysis of the tables is conducted to identify null values and outliers. 
+--Finally, tables are created based on relevant calculations for a future dashboard.
 
 --TABLE APPEARANCES
 
